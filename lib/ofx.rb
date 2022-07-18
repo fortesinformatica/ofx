@@ -18,7 +18,6 @@ require "ofx/version"
 
 def OFX(resource, &block)
   parser = OFX::Parser::Base.new(resource).parser
-
   if block_given?
     if block.arity == 1
       yield parser
