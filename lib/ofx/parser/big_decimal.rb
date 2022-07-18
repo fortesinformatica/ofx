@@ -2,7 +2,7 @@ module OFX
   module Parser
     class BigDecimal
       def self.parse(value)
-        value = value.to_s.gsub("R$ ", "")
+        value = value.to_s.gsub(/[^\d,\-\.]/, "")
         BigDecimal(value.tr(',', '.'))
       rescue ArgumentError
         if (value.index(".") < value.index(","))

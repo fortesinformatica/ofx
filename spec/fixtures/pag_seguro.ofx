@@ -1,0 +1,70 @@
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:100
+SECURITY:NONE
+ENCODING:UTF-8
+CHARSET:NONE
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+<OFX>
+  <SIGNONMSGSRSV1>
+    <SONRS>
+      <STATUS>
+        <CODE>0</CODE>
+        <SEVERITY>INFO</SEVERITY>
+      </STATUS>
+      <DTSERVER>20220711072803[-3:BRT]</DTSERVER>
+      <LANGUAGE>POR</LANGUAGE>
+      <FI>
+        <ORG>PagSeguro Internet S/A</ORG>
+        <FID>290</FID>
+      </FI>
+    </SONRS>
+  </SIGNONMSGSRSV1>
+  <BANKMSGSRSV1>
+    <STMTTRNRS>
+      <STATUS>
+        <CODE>0</CODE>
+        <SEVERITY>INFO</SEVERITY>
+      </STATUS>
+      <STMTRS>
+        <CURDEF>BRL</CURDEF>
+        <BANKACCTFROM>
+          <BANKID>290</BANKID>
+          <ACCTID>33090330-3</ACCTID>
+          <ACCTTYPE>CHECKING</ACCTTYPE>
+        </BANKACCTFROM>
+        <BANKTRANLIST>
+          <DTSTART>20220601000000[-3:BRT]</DTSTART>
+          <DTEND>20220630000000[-3:BRT]</DTEND>
+          <STMTTRN>
+            <TRNTYPE>IN</TRNTYPE>
+            <DTPOSTED>20220604074632[-3:BRT]</DTPOSTED>
+            <TRNAMT>60.00</TRNAMT>
+            <FITID>25d07cb7-a032-4131-86a5-f92a1d7c7bda</FITID>
+            <MEMO>Pix Recebido - Recebimento de transferência Pix</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>OUT</TRNTYPE>
+            <DTPOSTED>20220609075232[-3:BRT]</DTPOSTED>
+            <TRNAMT>-65.60</TRNAMT>
+            <FITID>4d189609-234d-48a1-b8f8-ee43421cca93</FITID>
+            <MEMO>Pix Enviado - Transferência Pix</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>IN</TRNTYPE>
+            <DTPOSTED>20220626105938[-3:BRT]</DTPOSTED>
+            <TRNAMT>0.58</TRNAMT>
+            <FITID>91559287-95e6-4fed-93fe-bf073a7b3138</FITID>
+            <MEMO>Rendimento da conta - Rendimento líquido sobre dinheiro em conta</MEMO>
+          </STMTTRN>
+        </BANKTRANLIST>
+        <LEDGERBAL>
+          <BALAMT>R$ 73,36</BALAMT>
+          <DTASOF>26/06/2022</DTASOF>
+        </LEDGERBAL>
+      </STMTRS>
+    </STMTTRNRS>
+  </BANKMSGSRSV1>
+</OFX>

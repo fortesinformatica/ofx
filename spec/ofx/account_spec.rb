@@ -144,6 +144,22 @@ describe OFX::Account do
       end
     end
 
+    context "Pag Seguro" do
+      before do
+        @ofx = OFX::Parser::Base.new("spec/fixtures/pag_seguro.ofx")
+        @parser = @ofx.parser
+        @account = @parser.account
+      end
+
+      it "should return balance" do
+        @account.balance.amount.should == BigDecimal('73.36')
+      end
+
+      it "should return transactions" do
+        @account.transactions.map(&:amount).should == [BigDecimal('60.0'), BigDecimal('-65.6'), BigDecimal('0.58')]
+      end
+    end
+
     context "Original" do
       before do
         @ofx = OFX::Parser::Base.new("spec/fixtures/original.ofx")
